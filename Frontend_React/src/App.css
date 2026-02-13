@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: #1a1a1a;
+  color: #e0e0e0;
+}
+
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+
+.app__sidebar {
+  width: 320px;
+  min-width: 280px;
+  flex-shrink: 0;
+  padding: 1rem 1.25rem;
+  background: #252525;
+  border-right: 1px solid #333;
+  overflow-y: auto;
+}
+
+.app__header {
+  margin-bottom: 1.5rem;
+}
+
+.app__title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.app__section {
+  margin-bottom: 1.5rem;
+}
+
+.app__section-title {
+  margin: 0 0 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.app__main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  background: #111;
+}
+
+/* Pixel stream viewer */
+.pixel-stream-viewer {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.pixel-stream-viewer__iframe {
+  flex: 1;
+  width: 100%;
+  min-height: 400px;
+  border: none;
+  background: #000;
+}
+
+.pixel-stream-viewer--empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  color: #888;
+}
+
+.pixel-stream-viewer--empty p {
+  margin: 0 0 0.5rem;
+}
+
+.pixel-stream-viewer__hint {
+  font-size: 0.875rem;
+  max-width: 420px;
+}
+
+.pixel-stream-viewer__hint code {
+  padding: 0.15em 0.4em;
+  background: #333;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+/* Form elements in sidebar */
+.app__section input[type="text"],
+.app__section input[type="file"],
+.app__section button {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background: #333;
+  color: #e0e0e0;
+}
+
+.app__section input[type="file"] {
+  padding: 0.35rem 0.75rem;
+}
+
+.app__section button {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.app__section button:hover:not(:disabled) {
+  background: #404040;
+  border-color: #555;
+}
+
+.app__section button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.app__section pre {
+  margin: 0.5rem 0 0;
+  padding: 0.75rem;
+  font-size: 0.75rem;
+  background: #1a1a1a;
+  border-radius: 6px;
+  overflow: auto;
+  max-height: 120px;
+}

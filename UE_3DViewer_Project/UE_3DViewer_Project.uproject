@@ -1,0 +1,34 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "UE 3D Viewer",
+	"Description": "3D viewer project for meshes, point clouds, and Gaussian splats",
+	"Category": "Project",
+	"CreatedBy": "",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanAllowMultipleViews": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "UE_3DViewer_Project",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "GaussianSplatting",
+			"Enabled": true
+		},
+		{
+			"Name": "RuntimeMeshLoader",
+			"Enabled": true
+		}
+	]
+}

@@ -1,0 +1,72 @@
+# Environment and secrets (copy .env.example to .env locally)
+.env
+.env.local
+.env.*.local
+
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build and output
+dist/
+build/
+*.local
+.vite/
+Frontend_React/dist/
+Backend_API/dist/
+PixelStreamingInfrastructure/SignallingWebServer/dist/
+PixelStreamingInfrastructure/Signalling/dist/
+
+# Storage data (keep structure; ignore uploaded/processed content if desired)
+# Uncomment to ignore all storage contents:
+# Storage/raw/*
+# Storage/processed/*
+# Storage/annotations/*
+# Keep JSON config in Storage (projects.json, etc.) by not ignoring Storage/ entirely
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+
+# Unreal Engine (ignore full engine; use submodule or install separately)
+UnrealEngine/
+
+# Unreal project build outputs
+UE_3DViewer_Project/Binaries/
+UE_3DViewer_Project/Intermediate/
+UE_3DViewer_Project/Saved/
+**/LinuxNoEditor/
+**/WindowsNoEditor/
+
+# OS and editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.sublime-*
+
+# Certificates (if generated locally)
+*.pem
+PixelStreamingInfrastructure/SignallingWebServer/certificates/
+
+# Misc
+.cache/
+*.tsbuildinfo
+
+# Cursor / IDE (optional)
+# .cursor/

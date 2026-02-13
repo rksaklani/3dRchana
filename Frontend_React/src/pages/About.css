@@ -1,0 +1,33 @@
+.page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 1.5rem;
+  color: var(--text, #f0f0f0);
+}
+
+.about__content {
+  max-width: 720px;
+  line-height: 1.7;
+}
+
+.about__content p {
+  margin: 0 0 1rem;
+  color: var(--text-muted, #9ca3af);
+}
+
+.about__content h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 2rem 0 0.75rem;
+  color: var(--text, #f0f0f0);
+}
+
+.about__content ol {
+  margin: 0 0 1rem;
+  padding-left: 1.5rem;
+  color: var(--text-muted, #9ca3af);
+}
+
+.about__content li {
+  margin-bottom: 0.5rem;
+}
