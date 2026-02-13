@@ -1,4 +1,4 @@
-# UE 3D Viewer – Full Stack
+# UE 3D Viewer – Full Stack (3dRchana)
 
 One workspace that integrates **PixelStreamingInfrastructure**, **Backend_API**, **Frontend_React**, **UnrealEngine**, **Storage**, **UE_3DViewer_Project**, and **scripts** so the web app, API, pixel-streaming player, and Unreal streamer work together.
 
